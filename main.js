@@ -50,7 +50,7 @@ function autoattack(){
 		var k = sets[8].keys();
 		var ret;
 		for(i = Math.floor(Math.random()*sets[8].size);i >= 0;i--){
-			ret = k.next();
+autoattack(			ret = k.next();
 			tarX = ret.value.x;
 			tarY = ret.value.y;
 		}
@@ -113,5 +113,5 @@ function autoattack(){
 	xhr.send("x="+tarX+"&y="+tarY+"&color=3");
 
 }
-
+autoattack();
 setInterval(autoattack, 302000);
