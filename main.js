@@ -50,7 +50,7 @@ function autoattack(){
 		var k = sets[8].keys();
 		var ret;
 		for(i = Math.floor(Math.random()*sets[8].size);i >= 0;i--){
-autoattack(			ret = k.next();
+			ret = k.next();
 			tarX = ret.value.x;
 			tarY = ret.value.y;
 		}
