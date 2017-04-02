@@ -111,7 +111,7 @@ function autoattack(){
 	xhr.setRequestHeader("x-modhash",document.getElementById("config").innerHTML.match(/"modhash": "(\w+)"/)[1]);
 	xhr.setRequestHeader("x-requested-with","XMLHttpRequest");
 	xhr.send("x="+tarX+"&y="+tarY+"&color=3");
-
+	document.getElementById("place-molly-guard").className += " place-locked";
 }
 autoattack();
 setInterval(autoattack, 302000);
